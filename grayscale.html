@@ -1,18 +1,11 @@
 <html>
-       <head>
-              <style>
-                     canvas{
-                     border :1px solid black;
-                     width:10%;
-                     }
-              </style>
-       </head>
-       <body>
-<canvas id="can"> </canvas>
-<canvas id="can2"> </canvas>
-
-
-
+    <head>
+        <style>
+            canvas{
+            border :1px solid black;
+            width:10%;
+            }
+        </style>
 <script src = "https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"> </script>
 <script>
 var image;
@@ -39,8 +32,16 @@ function makeGray(){
   var imagecanvas= document.getElementById("can2");
   grayImage.drawTo(imagecanvas);
 }
-              </script>
+</script>
+    
+       </head>
+       <body>
+<canvas id="can"> </canvas>
+<canvas id="can2"> </canvas>
+
 <br>
+
+
 <input type="file" multiple="false" accept="image/*"
        id="finput" onchange="upload()">
 <input type="button" value="make gray" onclick="makeGray()">
